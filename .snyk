@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - sails > @sailshq/express > @sailshq/connect > connect-timeout > debug:
+        patched: '2021-05-18T08:01:49.294Z'
+  'npm:ms:20170412':
+    - sails > @sailshq/express > @sailshq/connect > connect-timeout > ms:
+        patched: '2021-05-18T08:01:49.294Z'
+    - sails > @sailshq/express > @sailshq/connect > connect-timeout > debug > ms:
+        patched: '2021-05-18T08:01:49.294Z'
